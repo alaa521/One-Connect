@@ -1,0 +1,83 @@
+body{
+    background-image: url(../img/2978.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+
+
+  .cv-form{
+	height: 540px;
+	width: 520px;
+	margin-right: 430px;
+	margin-top: 8px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f2f2f2;
+
+  }
+  .cv{
+     display: block;
+	 width: 470px;
+	 margin-right: 25px;
+     margin-top: 10px;
+	 
+  }
+  .cv-text{
+   height: 30px;
+   font-family: "DroidArabicKufiRegular";
+   margin-right: 200px;
+   margin-top: 10px;
+   color: #c4282e;
+
+
+
+   
+}
+.collapse .d-flex{
+  left: 0;
+  position: absolute;
+  z-index: 9;
+
+}
+
+ .cv .form-control{
+	height: 50px;
+    border: #eaeaea 1px solid;
+  }
+  .btn-default{
+	color: white;
+  }
+  .job-text{
+	border: #eaeaea 1px solid;
+	background-color: #fff;
+	border-radius: 2%;
+  }
+  .btn-outline-success {
+    color: #c4282e;
+    border-color: #c4282e;
+    }
+    .btn-outline-success:hover {
+    color: #fff;
+    background-color: #c4282e;
+    border-color: #c4282e;
+    }
+  
+   .nav-link {
+    color: #fe0002;
+    font-family: "DroidArabicKufiRegular";
+    font-weight: bold ;
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+      color: black;
+  
+  }
+  .navbar a {
+    display: block;
+  }	
+  .navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    }

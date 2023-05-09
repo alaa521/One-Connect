@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    height: auto;
+
+}
+.navigation{
+    position: absolute;
+    width: 300px;
+    height: 150%;
+    background:  #c4282e;
+    border-left: 10px solid #c4282e;
+    transition: 0.5s;
+}
+
+.navigation.active{
+     width:75px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;  
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px;
+}
+.navigation ul li:hover, .navigation ul li.hovered
+{
+     background: white;
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li:hover a, .navigation ul li.hovered a , .navigation .tilh.hovered{
+    color: black;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 57px;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.fa-house-chimney , 
+.fa-graduation-cap ,
+.fa-user-graduate,
+.fa-gears,
+.fa-code-branch,
+.fa-users,
+.fa-user,
+.fa-lock,
+.fa-arrow-right-from-bracket{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px white;
+    background: transparent;
+    pointer-events: none;
+
+   
+}
+
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px white;
+    background: transparent;
+    pointer-events: none;
+
+   
+}
+
+   #myDropdown{
+   display: none;
+   flex-direction: column;
+   color: white;
+  }
+  .dropp{
+    text-decoration:none;
+    color: white;
+    line-height: 40px;
+    margin-right: 100px;
+  }
+  .tilh{
+    cursor: pointer;
+  }
+
+  
+  .tilh::after {
+    border-bottom            : 3px solid rgba(255, 255, 255, 0.4);
+    border-right             : 3px solid rgba(255, 255, 255, 0.4);
+    content                  : '';
+    display                  : block;
+    height                   : 5px;
+    width                    : 5px;
+    margin-top               : -4px;
+    pointer-events           : none;
+    position                 : absolute;
+    right                    : 170px;
+    top                      : 30px;
+    /* -webkit-transform-origin : 66% 66%;
+    -ms-transform-origin     : 66% 66%;
+    transform-origin         : 66% 66%; */
+    -webkit-transform        : rotate(45deg);
+    transform                : rotate(45deg);
+    transition               : all .5s;
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+/*main*/
+.main{
+    width: calc(100% - 300px );
+    left :300px;
+    min-height: 100vh;
+    background: white;
+    transition: 0.5s;
+}
+.toggle{
+    z-index: 9;
+}
+.fa-bars{
+    z-index: 9;
+    margin-right: 25px;
+}
+.fa-bars:hover{
+    color: aliceblue;
+}
+.fa-bell{
+    float: left;
+    margin-left: -270px;
+    margin-top: -30px;
+}
+.heading {
+    text-align: center;
+    padding: 4rem 0px;
+    margin-right: 500px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+.heading span {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background: rgba(175, 173, 185, 0.61);
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ***************************************************************** */
+
+.cardBox{
+    position: relative;
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 380px;
+    margin-top: 50px;
+
+}
+
+.cardBox .card{
+    position: relative;
+    background:white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 20px;
+    width: 13%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .number{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--blue);
+
+}
+.cardBox .card .cardName{
+    color: var(--black2);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBox{
+    font-size: 3.4em;
+    color: var(--black2);
+}
+
+.cardBox .card:hover{
+    background: var(--blue);
+}
+
+.cardBox .card:hover .number, 
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBox{
+    color:   #c4282e;
+}
+
+
+/* manage student  */
+.stu-head{
+    margin-top: -45%;
+}
+
+.heading-h{
+    margin-right: 690px;
+}
+.btn-brimary{
+    border-style: none;
+    background-color:   #c4282e;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    height: 30px;
+    margin-right: 25%;
+    padding: 4px;
+}
+.btn-brimaryy{
+    border-style: none;
+    background-color:   #c4282e;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    height: 30px;
+    margin-left: 60%;
+    padding: 4px;
+
+}
+.btn-brimary:hover{
+    background-color:rgb(235, 235, 235) ;    
+    color: #c4282e;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.details{
+    position: relative;
+    padding: 30px;
+    margin-right: 300px;
+    clear: both;
+    height: fit-content;
+
+
+    
+}
+
+.details .recentOrders{
+    position: relative;
+    display: grid;
+    background: white;
+    padding: 20px;
+    box-shadow:  0 7px 25px rgba(0, 0, 0, 0.08);
+   border-radius: 20px;
+   
+
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader i{
+    cursor: pointer;
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: -200px; */
+    position: relative;    
+}
+
+.details table thead td{
+  font-weight: 600;
+}
+
+.details .recentOrders table tr{
+   color: black;
+   border-bottom: 1px solid rgba(0, 0, 0,0.1);
+}
+
+.details .recentOrders table tr:last-child{
+   border-bottom: none;
+}
+.details .recentOrders table tr td{
+    padding: 10px;
+}
+
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color:#2ed573 ;  
+}
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #ff4757; 
+}
+
+/* add student  */
+
+.btn{
+    padding: 5px 10px;
+    background: #c4282e;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    border-color: #c4282e;
+    font-size: large;
+    
+}
+.btn:hover{
+    background-color: #ff4757;
+    border-color: #ff4757;
+}
+
+/* add work */

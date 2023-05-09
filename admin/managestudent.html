@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/ce8e52b871.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+    <title>إدارة صفحة الطالب</title>
+    <link rel="stylesheet" href="/css/admin.css" >
+
+</head>
+<body dir="rtl">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="title" Style="font-family: 'Lobster', cursive; font-size:2em; margin-right: 100px; margin-top: -18px;">one connect</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="/admin/dashboard.html">
+                    <i class="fa-solid fa-house-chimney" ></i>
+                    <span class="title">الرئيسية</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="/admin/managestudent.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span class="title">الطالب</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="mangebooks.php ">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="title">الدورات</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="managequotes.php">
+                    <i class="fa-solid fa-gears"></i>
+                    <span class="title">الخدمات</span>
+                </a>
+            </li>
+            <li>
+                <a class="admin-h" href="/admin/managework.html">
+                    <i class="fa-solid fa-code-branch"></i>        
+                    <span class="title">الاعمال</span>
+                </a>
+            </li>
+            <li>
+                <a class="admin-h" href="/admin/managemployee.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="title">الموظفين</span>
+                </a>
+            </li>
+
+            
+            <li class="tilh">
+                <a>
+                    <i class="fa-solid fa-user"></i>
+                    <span class="title">الصلاحيات</span>
+                </a>
+               
+            </li>
+            <div id="myDropdown" class="dropdown-content" >
+                <a href="#" class="dropp">تغير كلمة السر </a>
+                <a href="#" class="dropp">ادارة الصلاجيات </a>
+                <a href="#" class="dropp">ادارة صفحة المستخدم</a>
+              </div>
+            <li>
+                <a href="logout.php">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="title">تسجيل خروج</span>
+                </a>
+            </li>
+
+        </ul>            
+        </div>
+        <div class="main">
+            <div class="topbar">
+                    <div class="toggle" >
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </div>
+            </div>
+        </div>
+
+        <div class="stu-head">
+            <h1 class="heading-h" style="margin-top: -5%">
+               إدارة صفحة الطالب
+                </h1>
+            </div>
+ 
+            <div class="cardHeader">
+                <a href="addstudent.html" class="btn-brimary">إضافة طالب</a> 
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td> S.N </td>
+                                <!-- <td> إسم الطالب  </td> -->
+                                <td style="width: 200px;"> اسم االمستخدم </td>
+                                <td style="width: 200px;"> كلمة السر </td>
+                                <td > البريد الالكتروني</td>
+                            </tr>
+                        </thead>
+                      
+
+
+                        <tbody>
+                            <tr>
+                            <td>1</td>
+                            <td >alaa123</td>
+                            <td>asd123</td>
+                            <td>amer456fmj@hotmail.com</td>
+                            <td>
+                                <a href="/admin/updatestudent.html" class="btn-secondary">تعديل</a>
+                                <a href="#" class="btn-danger">حذف</a>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td >alaa123</td>
+                                <td>asd123</td>
+                                <td>amer456fmj@hotmail.com</td>
+                                <td>
+                                    <a href="#" class="btn-secondary">تعديل</a>
+                                    <a href="#" class="btn-danger">حذف</a>
+                                </td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td >alaa123</td>
+                                    <td>asd123</td>
+                                    <td>amer456fmj@hotmail.com</td>
+                                    <td>
+                                        <a href="#" class="btn-secondary">تعديل</a>
+                                        <a href="#" class="btn-danger">حذف</a>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td >alaa123</td>
+                                        <td>asd123</td>
+                                        <td>amer456fmj@hotmail.com</td>
+                                        <td>
+                                            <a href="#" class="btn-secondary">تعديل</a>
+                                            <a href="#" class="btn-danger">حذف</a>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td >alaa123</td>
+                                            <td>asd123</td>
+                                            <td>amer456fmj@hotmail.com</td>
+                                            <td>
+                                                <a href="#" class="btn-secondary">تعديل</a>
+                                                <a href="#" class="btn-danger">حذف</a>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td >alaa123</td>
+                                                <td>asd123</td>
+                                                <td>amer456fmj@hotmail.com</td>
+                                                <td>
+                                                    <a href="#" class="btn-secondary">تعديل</a>
+                                                    <a href="#" class="btn-danger">حذف</a>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td >alaa123</td>
+                                                    <td>asd123</td>
+                                                    <td>amer456fmj@hotmail.com</td>
+                                                    <td>
+                                                        <a href="#" class="btn-secondary">تعديل</a>
+                                                        <a href="#" class="btn-danger">حذف</a>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td >alaa123</td>
+                                                        <td>asd123</td>
+                                                        <td>amer456fmj@hotmail.com</td>
+                                                        <td>
+                                                            <a href="#" class="btn-secondary">تعديل</a>
+                                                            <a href="#" class="btn-danger">حذف</a>
+                                                        </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td >alaa123</td>
+                                                            <td>asd123</td>
+                                                            <td>amer456fmj@hotmail.com</td>
+                                                            <td>
+                                                                <a href="#" class="btn-secondary">تعديل</a>
+                                                                <a href="#" class="btn-danger">حذف</a>
+                                                            </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td >alaa123</td>
+                                                                <td>asd123</td>
+                                                                <td>amer456fmj@hotmail.com</td>
+                                                                <td>
+                                                                    <a href="#" class="btn-secondary">تعديل</a>
+                                                                    <a href="#" class="btn-danger">حذف</a>
+                                                                </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11</td>
+                                                                    <td >alaa123</td>
+                                                                    <td>asd123</td>
+                                                                    <td>amer456fmj@hotmail.com</td>
+                                                                    <td>
+                                                                        <a href="#" class="btn-secondary">تعديل</a>
+                                                                        <a href="#" class="btn-danger">حذف</a>
+                                                                    </td>
+                                                                    </tr>
+                           
+                        </tbody>    
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        
+       <script src="../js/bootstrap.js" ></script>
+       <script src="../js/bootstrap.min.js"></script>
+       <script src="../js/main.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+       
+
+
+</body>
+</html>

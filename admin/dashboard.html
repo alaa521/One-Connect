@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/ce8e52b871.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+
+    <title>لوحة تحكم المدير</title>
+    <link rel="stylesheet" href="/css/admin.css" >
+</head>
+<body>
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="title" Style="font-family: 'Lobster', cursive; font-size:2em; margin-right: 100px; margin-top: -18px;">one connect</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="/admin/dashboard.html">
+                    <i class="fa-solid fa-house-chimney" ></i>
+                    <span class="title">الرئيسية</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="/admin/managestudent.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span class="title">الطالب</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="mangebooks.php ">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="title">الدورات</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="admin-h" href="managequotes.php">
+                    <i class="fa-solid fa-gears"></i>
+                    <span class="title">الخدمات</span>
+                </a>
+            </li>
+            <li>
+                <a class="admin-h" href="/admin/managework.html">
+                    <i class="fa-solid fa-code-branch"></i>        
+                    <span class="title">الاعمال</span>
+                </a>
+            </li>
+            <li>
+                <a class="admin-h" href="/admin/managemployee.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="title">الموظفين</span>
+                </a>
+            </li>
+
+            
+            <li class="tilh">
+                <a>
+                    <i class="fa-solid fa-user"></i>
+                    <span class="title">الصلاحيات</span>
+                </a>
+               
+            </li>
+            <div id="myDropdown" class="dropdown-content" >
+                <a href="#" class="dropp">تغير كلمة السر </a>
+                <a href="#" class="dropp">ادارة الصلاجيات </a>
+                <a href="#" class="dropp">ادارة صفحة المستخدم</a>
+              </div>
+            <li>
+                <a href="logout.php">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="title">تسجيل خروج</span>
+                </a>
+            </li>
+
+        </ul>            
+        </div>
+
+      <!-- *************************************************** -->
+      <!-- dashboard -->
+      <div class="main">
+        <div class="topbar">
+                <div class="toggle" >
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </div>
+                <h1 class="heading" style="margin-top: -3%">
+                    <!-- <span><img class="logo-h" src="/img/logo.png" alt="" width="100" height="50">                    </span> -->
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>N</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>T</span>
+                    <span><i class="fa-solid fa-1" style="color:#c4282e ; "></i></span>
+
+                    </h1>
+                </div>
+                <!--user image -->
+                <div class="user"> 
+                    <i class="fa-solid fa-bell fa-2xl"></i>                                                        
+                    
+                </div>
+
+                <div class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="number">2</div>
+                      <div class="cardName"> الادمن</div>
+                  </div>
+
+                  <div class="iconBox">
+                  <span class="las la-file-contract icon" > </span>                    
+                  </div>
+
+              </div>
+
+
+              <div class="card">
+                        <div>
+                            <div class="number">5</div>
+                      <div class="cardName"> الموظفين</div>
+                  </div>
+
+                  <div class="iconBox">
+                  <span class="las la-file-contract icon" > </span>                    
+                  </div>
+
+              </div>
+
+
+              <div class="card">
+                <div>
+                    <div class="number">80</div>
+              <div class="cardName"> الطلاب</div>
+          </div>
+
+          <div class="iconBox">
+          <span class="las la-file-contract icon" > </span>                    
+          </div>
+
+      </div>
+      <div class="card">
+        <div>
+            <div class="number">20</div>
+      <div class="cardName"> الدورات</div>
+  </div>
+
+  <div class="iconBox">
+  <span class="las la-file-contract icon" > </span>                    
+  </div>  
+        </div>
+
+            
+        <div class="card">
+            <div>
+                <div class="number">16</div>
+          <div class="cardName"> الاعمال</div>
+      </div>
+
+      <div class="iconBox">
+      <span class="las la-file-contract icon" > </span>                    
+      </div>
+
+                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+         
+
+
+
+
+
+
+
+
+
+       <script src="../js/bootstrap.js" ></script>
+       <script src="../js/bootstrap.min.js"></script>
+       <script src="../js/main.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+</body>
+</html>
